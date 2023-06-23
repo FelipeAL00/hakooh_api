@@ -1,7 +1,7 @@
 from django.db import models
 import uuid
 
-from addresses.models import Address
+from users.models import Address
 from payments.models import Payment
 
 class Order(models.Model):
