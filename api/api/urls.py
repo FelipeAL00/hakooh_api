@@ -3,11 +3,8 @@ from django.urls import path, include
 from rest_framework import routers
 
 from users.views import UserViewSet, AddressViewSet
-from products.views import ProductViewSet
-from wallets.views import WalletViewSet
-from payments.views import PaymentViewSet 
-from cards.views import CardViewSet
-from orders.views import OrderViewSet
+from products.views import ProductViewSet, OrderViewSet
+from wallets.views import WalletViewSet, PaymentViewSet, CardViewSet
 
 router = routers.DefaultRouter()
 router.register(r'addresses', AddressViewSet)
